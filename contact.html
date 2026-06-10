@@ -441,16 +441,16 @@ footer{background:var(--navy-dark);color:rgba(255,255,255,.6);padding:60px 0 0}
         <h3>Send Us a Message</h3>
         <p>Fill in the form and we'll get back to you within 24 hours with a tailored response.</p>
         <hr>
-        <form class="cf" onsubmit="handleForm(event,'cbtn')" novalidate>
+        <form class="cf" action="https://formspree.io/f/mwvjqwap" method="POST" onsubmit="handleForm(event,'cbtn')">
           <div class="cf-row">
-            <input type="text" placeholder="First Name" required>
-            <input type="text" placeholder="Last Name" required>
+            <input type="text" name="First Name" placeholder="First Name" required>
+            <input type="text" name="Last Name" placeholder="Last Name" required>
           </div>
-          <input type="email" placeholder="Email Address" required>
-          <input type="tel" placeholder="Phone Number">
-          <input type="text" placeholder="Company / Venue Name">
-          <input type="text" placeholder="Type of Project (e.g. new kitchen, refurbishment)">
-          <textarea placeholder="Tell us about your project — type of venue, approximate size, timescale and any specific requirements..." required></textarea>
+          <input type="email" name="Email Address" placeholder="Email Address" required>
+          <input type="tel" name="Phone Number" placeholder="Phone Number">
+          <input type="text" name="Company / Venue Name" placeholder="Company / Venue Name">
+          <input type="text" name="Type of Project" placeholder="Type of Project (e.g. new kitchen, refurbishment)">
+          <textarea name="Project Details" placeholder="Tell us about your project — type of venue, approximate size, timescale and any specific requirements..." required></textarea>
           <button id="cbtn" type="submit" class="btn btn-red" style="align-self:flex-start">Send Message →</button>
           <p style="font-size:12px;color:var(--text-light)">🔒 Your details are kept private and will never be shared with third parties.</p>
         </form>
