@@ -441,8 +441,10 @@ footer{background:var(--navy-dark);color:rgba(255,255,255,.6);padding:60px 0 0}
         <h3>Send Us a Message</h3>
         <p>Fill in the form and we'll get back to you within 24 hours with a tailored response.</p>
         <hr>
-        <form class="cf" action="https://formspree.io/f/mwvjqwap" method="POST" onsubmit="handleForm(event,'cbtn')">
+        <form class="cf" action="https://formspree.io/f/mwvjqwap" method="POST">
           <div class="cf-row">
+            <input type="hidden" name="_subject" value="New Enquiry — MN Commercial Kitchens">
+            <input type="hidden" name="_next" value="https://www.mnck.co.uk/thank-you.html">
             <input type="text" name="First Name" placeholder="First Name" required>
             <input type="text" name="Last Name" placeholder="Last Name" required>
           </div>
