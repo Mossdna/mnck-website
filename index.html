@@ -431,15 +431,17 @@ footer{background:var(--navy-dark);color:rgba(255,255,255,.6);padding:60px 0 0}
       </div>
       <div class="hero-card">
         <h3>📋 Quick Enquiry</h3>
-        <form onsubmit="handleForm(event,'hbtn')" novalidate>
-          <div class="hf"><input type="text" placeholder="Your Full Name" required></div>
-          <div class="hf"><input type="tel" placeholder="Phone Number" required></div>
-          <div class="hf"><input type="email" placeholder="Email Address" required></div>
+        <form action="https://formspree.io/f/mwvjqwap" method="POST">
+          <div class="hf"><input type="hidden" name="_subject" value="New Enquiry — MN Commercial Kitchens">
+          <input type="hidden" name="_next" value="https://www.mnck.co.uk/thank-you.html">
+          <input type="text" name="Full Name" placeholder="Your Full Name" required></div>
+          <div class="hf"><input type="tel" name="Phone Number" placeholder="Phone Number" required></div>
+          <div class="hf"><input type="email" name="Email Address" placeholder="Email Address" required></div>
           <div class="hf hf-row">
-            <input type="text" placeholder="Company / Venue">
-            <input type="text" placeholder="Approx. Budget">
+            <input type="text" name="Company / Venue" placeholder="Company / Venue">
+            <input type="text" name="Approx. Budget" placeholder="Approx. Budget">
           </div>
-          <div class="hf"><textarea placeholder="Tell us about your project..."></textarea></div>
+          <div class="hf"><textarea name="Project Details" placeholder="Tell us about your project..."></textarea></div>
           <button id="hbtn" type="submit" class="btn btn-red" style="width:100%;justify-content:center">Send Enquiry →</button>
           <p class="form-note">🔒 We respond within 24 hours. No obligation.</p>
         </form>
